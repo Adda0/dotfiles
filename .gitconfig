@@ -1,0 +1,184 @@
+; ====================================================
+; File name: .gitconfig
+;
+; Git config file
+; ====================================================
+; based on: https://github.com/s3rvac/dotfiles/blob/master/git/.gitconfig
+; described here: https://youtu.be/woCwZ9OnvYo
+;
+; author: Adda (David Chocholaty)
+; date: 15. 5. 2020
+; ====================================================
+
+[user]
+    name = Adda0
+    email = chocholaty.david0@gmail.com
+
+[color]
+    ; Enable colored output.
+    ui = true
+
+[color "grep"]
+;    ; Match my colors used by the system grep.
+;    filename = magenta
+;    match = yellow bold
+;    separator = cyan
+
+[core]
+    ; Whitespace problems that git should recognize.
+    whitespace = trailing-space,space-before-tab
+    ; Used pager.
+    pager = less -iFRXS -x4
+    ; Used editor.
+    editor = vim
+
+[advice]
+;    ; Make git a little less verbose.
+;    pushNonFastForward = false
+;    statusHints = false
+;    commitBeforeMerge = false
+;    resolveConflict = false
+;    ;implicitIdentity   = false
+;    detachedHead = false
+
+[diff]
+    ; Allow `git diff` to do basic rename and copy detection.
+    renames = copies
+    renameLimit = 10000
+
+[fetch]
+    ; Automatically prune (remove local branches that were removed from remote) during `git fetch`.
+    prune = true
+
+[gc]
+    autoDetach = false
+
+[status]
+    ; Use a submodule-aware status.
+    submoduleSummary = true
+
+[push]
+    ; `git push` without any refspec will push the current branch out to the
+    ; same name at the remote repository only when it is set to track the
+    ; branch with the same name over there.
+    default = simple ; deprecated (default mode since Git 2.0)
+    ; Check that all submodules have been properly pushed before pushing the
+    ; main project.
+    recurseSubmodules = check
+
+[rebase]
+    ; Automatically stash before a rebase and unstash afterwards.
+    autoStash = true
+
+[status]
+    ; Use a submodule-aware status.
+    submoduleSummary = true
+
+[merge]
+    ; The used merge tool.
+;	tool = vimdiff
+    tool = meld
+
+[include]
+    ; Include a local config when it exists.
+    path = .gitconfig.local
+
+[sendemail]
+;	; Review and edit each patch before sending.
+;	annotate = true
+;	; Always confirm before sending.
+;	confirm = always
+;	; Don't send every patch as a reply to the previous patch.
+;	chainreplyto = false
+
+[credential]
+;	; Enable password cache for http/https and make it timeout after 1 hour.
+;	helper = cache --timeout=3600
+    helper = cache --timeout=0
+
+[git-edit-index]
+; Settings for the `git-edit-index` script.
+; https://github.com/s3rvac/git-edit-index
+    onEmptyBuffer = act
+
+[git-up "rebase"]
+; Settings for the `git-up` script.
+; https://github.com/aanand/git-up
+
+;	arguments = --preserve-merges
+;	log-hook = "echo \"* changes on $1:\"; git log --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s' $1..$2"
+
+[alias]
+    a = add
+    aa = add --update
+    aaa = add --all
+    ap = add --patch
+    ar = commit --amend --reset-author --verbose
+    aar = "!git aa && git ar"
+    aaar = "!git aaa && git ar"
+    authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
+    bl = blame
+    br = branch -vv
+    bra = branch -vv --all
+    c = commit --verbose
+    ca = commit --verbose --all
+    clear = reset --hard
+    cl = clone
+    conflicts = diff --name-only --diff-filter=U --relative
+    co = checkout
+    cob = checkout -b
+    cop = checkout -p
+    cp = cherry-pick
+    d = diff
+    da = diff HEAD
+    ds = diff --staged
+    ; https://github.com/s3rvac/git-edit-index
+    ei = edit-index
+    f = fetch --all --prune
+    g = grep
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    ignored = ls-files --exclude-standard --ignored --others
+    l = "!git --no-pager log -20 --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'; echo"
+    la = !git config -l | grep alias | cut -c 7-
+    ll = log --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'
+    lf = log --name-status --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'
+    lp = log --patch --format=fuller
+    lg = log --graph --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'
+    ;lg = log --all --color\n--graph --pretty=format:'%Cred%h%Creset\n%Cgreen(%ad)%Creset -%C(yellow)%d%Creset %s\n%C(bold blue)<%an>%Creset %Cgreen(%cr)%Creset\n'--abbrev-commit --date=short
+    lga = log --graph --branches --remotes --tags --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'
+    m = merge --no-ff
+    ma = merge --abort
+    p = push
+    pb = "!git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`"
+    db = "!git branch --delete \"$1\" && git push origin --delete \"$1\" #"
+    pl = pull --rebase=merges --autostash --stat --prune
+    r = reset
+    rb = rebase --rebase-merges
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase --interactive
+    s = status --short --branch
+    sm = submodule
+    sma = submodule add
+    smf = submodule foreach
+    sms = submodule status --recursive
+    smu = submodule update --init --recursive
+    sh = stash
+    sha = stash apply
+    shd = stash drop
+    shl = stash list
+    shp = stash pop
+    shs = stash show -p
+    sw = show --format=fuller --show-signature
+    sf = show --pretty="format:" --name-status
+    sync-fork="!git fetch upstream && git rebase upstream/`git rev-parse --abbrev-ref HEAD` && git push"
+    tags = tag --list -n1
+    showtag = show --quiet
+    today = "!git ll --since=midnight"
+    ; https://github.com/aanand/git-up
+    ;u = up
+    undo = "!git reset --soft HEAD^ && git reset"
+    u = "!git reset --soft HEAD^ && git reset"
+    wip = "!git add --all && git commit -m 'WIP'"
+
+; End of file
