@@ -108,6 +108,9 @@
 ;	arguments = --preserve-merges
 ;	log-hook = "echo \"* changes on $1:\"; git log --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s' $1..$2"
 
+[PyGitUp]
+; Using PyGitUp: https://github.com/msiemens/PyGitUp
+
 [alias]
     a = add
     aa = add --update
