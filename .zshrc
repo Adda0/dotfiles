@@ -1,11 +1,11 @@
 # ====================================================
-# file name: .zshrc
+# File name: .zshrc
 #
 # Zsh config file
 # ====================================================
 #
-# author: Adda (David Chocholaty)
-# date: 15. 5. 2020
+# Author: Adda (David Chocholaty)
+# Date: 15. 5. 2020
 # ====================================================
 
 # If you come from bash you might have to change your $PATH.

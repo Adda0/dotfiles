@@ -3,11 +3,11 @@
 ;
 ; Git config file
 ; ====================================================
-; based on: https://github.com/s3rvac/dotfiles/blob/master/git/.gitconfig
-; described here: https://youtu.be/woCwZ9OnvYo
+; Based on https://github.com/s3rvac/dotfiles/blob/master/git/.gitconfig
+; Described here: https://youtu.be/woCwZ9OnvYo
 ;
-; author: Adda (David Chocholaty)
-; date: 15. 5. 2020
+; Author: Adda (David Chocholaty)
+; Date: 15. 5. 2020
 ; ====================================================
 
 [user]
