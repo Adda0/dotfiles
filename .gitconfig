@@ -134,6 +134,8 @@
     cp = cherry-pick
     d = diff
     da = diff HEAD
+    dc = checkout --
+    dca = checkout -- .
     ds = diff --staged
     ; https://github.com/s3rvac/git-edit-index
     ei = edit-index
