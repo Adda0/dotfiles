@@ -13,6 +13,7 @@
 [user]
     name = Adda0
     email = chocholaty.david0@gmail.com
+    signingkey =
 
 [color]
     ; Enable colored output.
