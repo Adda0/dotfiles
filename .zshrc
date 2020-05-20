@@ -31,6 +31,7 @@ alias c='clear'
 alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc'
 alias e='exit'
 alias ex='exit'
+
 # Git aliases
 alias g='git'
 alias gs='g s'
