@@ -178,6 +178,7 @@
     rba = rebase --abort
     rbc = rebase --continue
     rbi = rebase --interactive
+    rbis = rebase --interactive --gpg-sign
     s = status --short --branch
     sm = submodule
     sma = submodule add
