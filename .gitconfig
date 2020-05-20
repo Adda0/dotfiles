@@ -113,19 +113,33 @@
 ; Using PyGitUp: https://github.com/msiemens/PyGitUp
 
 [alias]
+    # add
     a = add
     aa = add --update
     aaa = add --all
     ap = add --patch
-    ar = commit --amend --reset-author --verbose
+
+    # commit
     aar = "!git aa && git ar"
     aaar = "!git aaa && git ar"
+    ar = commit --amend --reset-author --verbose
+    ars = commit --amend --reset-author --gpg-sign --verbose
+    arso = commit --amend --reset-author --signoff --verbose
+    arss = commit --amend --reset-author --gpg-sign --signoff --verbose
+    c = commit --verbose
+    ca = commit --all --verbose
+    cs = commit --gpg-sign --verbose
+    csa = commit --gpg-sign --all --verbose
+    cso = commit --signoff --verbose
+    csoa = commit --signoff --all --verbose
+    css = commit --gpg-sign --signoff --verbose
+    cssa = commit --gpg-sign --signoff --all --verbose
+
+    # else
     authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
     bl = blame
     br = branch --verbose
     bra = branch --all --verbose
-    c = commit --verbose
-    ca = commit --all --verbose
     clear = reset --hard
     cl = clone
     conflicts = diff --name-only --diff-filter=U --relative
@@ -133,12 +147,6 @@
     cob = checkout -b
     cop = checkout -p
     cp = cherry-pick
-    cs = commit --gpg-sign --verbose
-    csa = commit --gpg-sign --all --verbose
-    cso = commit --signoff --verbose
-    csoa = commit --signoff --all --verbose
-    css = commit --gpg-sign --signoff --verbose
-    cssa = commit --gpg-sign --signoff --all --verbose
     d = diff
     da = diff HEAD
     dc = checkout --
