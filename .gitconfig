@@ -123,9 +123,9 @@
     authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
     bl = blame
     br = branch --verbose
-    bra = branch --verbose --all
+    bra = branch --all --verbose
     c = commit --verbose
-    ca = commit --verbose --all
+    ca = commit --all --verbose
     clear = reset --hard
     cl = clone
     conflicts = diff --name-only --diff-filter=U --relative
