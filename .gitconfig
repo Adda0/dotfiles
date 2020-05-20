@@ -135,6 +135,10 @@
     cp = cherry-pick
     cs = commit --gpg-sign --verbose
     csa = commit --gpg-sign --all --verbose
+    cso = commit --signoff --verbose
+    csoa = commit --signoff --all --verbose
+    css = commit --gpg-sign --signoff --verbose
+    cssa = commit --gpg-sign --signoff --all --verbose
     d = diff
     da = diff HEAD
     dc = checkout --
