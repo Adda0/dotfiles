@@ -97,6 +97,10 @@ function tn {
 #complete -o default -o nospace -F git g
 
 
+#  Add Colour
+#export CLICOLOR=1
+#export LSCOLORS=GxFxCxDxBxegedabagaced
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
