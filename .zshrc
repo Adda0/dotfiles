@@ -26,11 +26,18 @@ ZSH_THEME="robbyrussell"
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-
+# General aliases
 alias c='clear'
 alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc'
 alias e='exit'
 alias ex='exit'
+alias ls='ls -GFha'
+
+#TODO
+#alias cdg='cd ~/git '
+#alias st='open -a "Sublime Text" '
+#alias bp='st ~/.bash_profile '
+#alias trash='rm -rf ~/.Trash/* '
 
 # Git aliases
 alias g='git'
