@@ -32,6 +32,7 @@ alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zs
 alias e='exit'
 alias ex='exit'
 alias ls='ls -GFha'
+alias tgz='tar -xvfz'
 
 #TODO
 #alias cdg='cd ~/git '
