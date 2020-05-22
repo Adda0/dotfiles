@@ -115,9 +115,9 @@ alias c='clear'
 alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc'
 alias e='exit'
 alias ex='exit'
-alias ll="ls -GFha"
+alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
+alias l="ls -l --all --color" # "ls -la --color"
 alias tgz='tar -xvfz'
-alias test="ls -al"
 
 #TODO
 #alias cdg='cd ~/git '
