@@ -31,7 +31,7 @@ alias c='clear'
 alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc'
 alias e='exit'
 alias ex='exit'
-alias ls='ls -GFha'
+alias ll='ls -GFha'
 alias tgz='tar -xvfz'
 
 #TODO
