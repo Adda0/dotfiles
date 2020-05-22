@@ -131,6 +131,9 @@ alias gut='git'
 alias got='git'
 alias gs='g s'
 
+# Print my public IP
+alias myip='curl ipinfo.io/ip'
+
 #TODO
 #alias gi='git init '
 #alias gs='git status -sb '
