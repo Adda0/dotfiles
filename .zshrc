@@ -112,12 +112,13 @@ source $ZSH/oh-my-zsh.sh
 
 # General aliases
 alias c='clear'
-alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc'
+alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc ; srczsh'
 alias e='exit'
 alias ex='exit'
 alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
 alias l="ls -l --all --color" # "ls -la --color"
 alias tgz='tar -xvfz'
+alias srczsh="source ~/.zshrc"
 
 #TODO
 #alias cdg='cd ~/git '
