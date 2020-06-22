@@ -137,6 +137,9 @@ alias gut='git'
 alias got='git'
 alias gs='g s'
 
+# GPG aliases
+alias gpgl="gpg --list-secret-keys --keyid-format LONG"
+
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
 
