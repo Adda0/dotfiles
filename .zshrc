@@ -120,6 +120,11 @@ alias l="ls -l --all --color" # "ls -la --color"
 alias tgz='tar -xvfz'
 alias srczsh="source ~/.zshrc"
 
+# Open config files
+alias gitconf="vim ~/.gitconfig"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zshconf="vim ~/.zshrc"
+
 #TODO
 #alias cdg='cd ~/git '
 #alias st='open -a "Sublime Text" '
