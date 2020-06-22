@@ -157,6 +157,7 @@ alias myip='curl ipinfo.io/ip'
 #alias gc-='git checkout - '
 #alias gd='git diff '
 
+# Clone GitHub repository with ssh
 function gcl {
     git clone ssh://git@github.com/$1/$2.git;
 }
