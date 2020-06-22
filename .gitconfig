@@ -15,9 +15,55 @@
     email = chocholaty.david0@gmail.com
     signingkey =
 
+# Colors
 [color]
     ; Enable colored output.
     ui = true
+ #   diff = auto
+#    status = auto
+    branch = auto
+    interactive = auto
+
+    pager = true
+
+[color "branch"]
+    #remote = yellow
+
+[color "status"]
+ #   added = green
+ #   changed = red bold
+#   untracked = magenta bold
+
+[color "diff"]
+	plain = normal
+	meta = bold
+	frag = cyan
+	old = red
+	new = green
+	commit = yellow
+	whitespace = normal red
+[color "branch"]
+	current = green
+	local = normal
+	remote = red
+	plain = normal
+[color "status"]
+	header = normal
+	added = red
+	updated = green
+	changed = red
+	untracked = red
+	nobranch = red
+[color "grep"]
+	match = normal
+[color "interactive"]
+	prompt = normal
+	header = normal
+	help = normal
+	error = normal
+
+
+
 
 [color "grep"]
 ;    ; Match my colors used by the system grep.
