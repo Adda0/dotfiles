@@ -204,4 +204,6 @@ function tn {
 # Created by `userpath` on 2020-03-16 15:46:44
 export PATH="$PATH:/home/adda/.local/bin"
 
+neofetch
+
 # End of file
