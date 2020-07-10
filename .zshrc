@@ -208,6 +208,10 @@ function tn {
 #export CLICOLOR=1
 #export LSCOLORS=GxFxCxDxBxegedabagaced
 
+#------------------------------------------------------------------------------
+# Environmental variables.
+#------------------------------------------------------------------------------
+export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # Created by `userpath` on 2020-03-16 15:46:44
 export PATH="$PATH:/home/adda/.local/bin"
