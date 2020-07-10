@@ -11,6 +11,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+PATH="$HOME/.cargo/bin${PATH:+:${PATH}}":
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/adda/.oh-my-zsh"
 
