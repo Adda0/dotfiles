@@ -117,8 +117,10 @@ alias c='clear'
 alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc ; srczsh'
 alias e='exit'
 alias ex='exit'
-alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
-alias l="ls -l --human-readable --all --color" # "ls -lah --color"
+#alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
+alias ls="exa --all --color=always"
+#alias l="ls --human-readable --all --color" # "ls -lah --color"
+alias l="exa --all --long --color=always --group-directories-first" # "exa -la --color=always --group-directories-first"
 alias tgz='tar -xvfz'
 alias srczsh="source ~/.zshrc"
 
