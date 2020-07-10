@@ -147,6 +147,15 @@ alias gpgl="gpg --list-secret-keys --keyid-format LONG"
 alias gpgg="gpg --full-generate-key"
 alias gpge="gpg --armor --export $0"
 
+# SSH key aliases
+# Lists the files in your .ssh directory, if they exist.
+alias sshl="ls -al ~/.ssh"
+# Generating public/private rsa key pair.
+# ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+function sshg {
+    ssh-keygen -t rsa -b 4096 -C "$0"
+}
+
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
 
