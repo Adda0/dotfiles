@@ -123,6 +123,7 @@ alias ls="exa --all --color=always"
 alias l="exa --all --long --color=always --group-directories-first" # "exa -la --color=always --group-directories-first"
 alias tgz='tar -xvfz'
 alias srczsh="source ~/.zshrc"
+alias ra="ranger"
 
 # Open config files
 alias gitconf="vim ~/.gitconfig"
