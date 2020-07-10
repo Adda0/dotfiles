@@ -178,14 +178,6 @@ function gcl {
     git clone ssh://git@github.com/$1/$2.git;
 }
 
-#function gacp {
-#	git add -A;
-#	git commit -m "$1";
-#	git push origin $2;
-#}
-
-
-
 # Rename Terminal Window - Usage: wn 'window name'
 function wn {
 	printf "\e]2;$1\a"
