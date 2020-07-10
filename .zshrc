@@ -144,6 +144,8 @@ alias gs='g s'
 
 # GPG aliases
 alias gpgl="gpg --list-secret-keys --keyid-format LONG"
+alias gpgg="gpg --full-generate-key"
+alias gpge="gpg --armor --export $0"
 
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
