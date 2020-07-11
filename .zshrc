@@ -133,6 +133,7 @@ alias ra="ranger"
 alias gitconf="vim ~/.gitconfig"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshconf="vim ~/.zshrc"
+alias grubconf="sudo vim /etc/default/grub && sudo grub-update"
 
 #TODO
 #alias cdg='cd ~/git '
