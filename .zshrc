@@ -115,12 +115,15 @@ source $ZSH/oh-my-zsh.sh
 # General aliases
 alias c='clear'
 alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc ; srczsh'
+alias cpzshrc="cp ./.zshrc ~/.zshrc && srczsh"
 alias e='exit'
 alias ex='exit'
 #alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
-alias ls="exa --all --color=always"
+alias ls="exa --all --color=always --classify"
 #alias l="ls --human-readable --all --color" # "ls -lah --color"
-alias l="exa --all --long --color=always --group-directories-first" # "exa -la --color=always --group-directories-first"
+alias l="exa --all --long --git --header --color=always --group-directories-first --classify --color-scale" # "exa -la --color=always --group-directories-first"
+alias lst="exa --tree --all --color=always --classify --color-scale"
+alias lstl="exa --tree --long --git --header --all --color=always --classify --color-scale"
 alias tgz='tar -xvfz'
 alias srczsh="source ~/.zshrc"
 alias ra="ranger"
