@@ -15,6 +15,7 @@ PATH="$HOME/.cargo/bin${PATH:+:${PATH}}":
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/adda/.oh-my-zsh"
+source ~/.config/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
