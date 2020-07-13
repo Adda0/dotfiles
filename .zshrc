@@ -146,6 +146,16 @@ alias g='git'
 alias gut='git'
 alias got='git'
 alias gs='g s'
+alias gc="g c"
+alias gcs="g cs"
+alias gap="g ap"
+alias gaa="g aa"
+alias gaaa="g aaa"
+alias glga="g lga"
+alias ga="g a"
+alias gp="g p"
+alias gars="g ars"
+alias gr="g r"
 
 # GPG aliases
 alias gpgl="gpg --list-secret-keys --keyid-format LONG"
