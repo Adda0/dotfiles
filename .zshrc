@@ -129,6 +129,11 @@ alias tgz='tar -xvfz'
 alias srczsh="source ~/.zshrc"
 alias ra="ranger"
 
+# Apt commands
+alias ins="sudo apt install -y"
+alias upt="sudo apt update && sudo apt upgrade -y"
+alias arm="sudo apt autoremove -y"
+
 # Open config files
 alias gitconf="vim ~/.gitconfig"
 alias ohmyzsh="vim ~/.oh-my-zsh"
