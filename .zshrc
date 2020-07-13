@@ -128,6 +128,7 @@ alias lstl="exa --tree --long --git --header --all --color=always --classify --c
 alias tgz='tar -xvfz'
 alias srczsh="source ~/.zshrc"
 alias ra="ranger"
+alias dotf="cd /mnt/DATA/Data/David/School/dotfiles"
 
 # Apt commands
 alias ins="sudo apt install -y"
