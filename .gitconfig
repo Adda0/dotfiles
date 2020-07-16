@@ -186,6 +186,8 @@
     bl = blame
     br = branch --verbose
     bra = branch --all --verbose
+    cc = rev-list --count # git rev-list --count <revision>
+    cca = rev-list --all --count 
     clear = reset --hard
     cl = clone
     conflicts = diff --name-only --diff-filter=U --relative
