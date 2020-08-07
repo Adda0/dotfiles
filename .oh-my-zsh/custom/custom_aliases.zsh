@@ -59,6 +59,7 @@ alias gut='git'
 alias got='git'
 
 ## Git shortcuts
+alias gi="g init"
 alias gs='g s'
 alias gc="g c"
 alias gcs="g cs"
@@ -89,7 +90,6 @@ function sshg {
 alias myip='curl ipinfo.io/ip'
 
 #TODO
-#alias gi='git init '
 #alias gs='git status -sb '
 #alias gc='git commit -m '
 #alias gac='ga -A && gc '
