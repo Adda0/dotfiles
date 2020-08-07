@@ -64,7 +64,7 @@ alias gut='git'
 alias got='git'
 
 ## Git shortcuts
-alias gi="g init"
+alias gi="g i"
 alias gs='g s'
 alias gc="g c"
 alias gcs="g cs"
