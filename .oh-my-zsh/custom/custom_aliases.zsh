@@ -76,6 +76,8 @@ alias ga="g a"
 alias gp="g p"
 alias gars="g ars"
 alias gr="g r"
+alias gpo="gp origin"
+alias gpom="gp origin master"
 
 # GPG aliases
 alias gpgl="gpg --list-secret-keys --keyid-format LONG"
@@ -98,8 +100,6 @@ alias myip='curl ipinfo.io/ip'
 #alias gs='git status -sb '
 #alias gc='git commit -m '
 #alias gac='ga -A && gc '
-#alias gpo='git push origin '
-#alias gpom='git push origin master'
 #alias gr='git rm -r '
 #alias gb='git checkout -b '
 #alias gc-='git checkout - '
