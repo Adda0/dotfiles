@@ -10,18 +10,6 @@
 
 # General aliases
 alias c='clear'
-alias cpconf="
-  cpgitconfig ;
-  cpzshrc ;
-  cpalias ;
-  srczsh
-"
-alias cpgitconfig="cp ./.gitconfig ~/.gitconfig"
-alias cpgitconfigs="cpgitconfig && scrzsh"
-alias cpzshrc="cp ./.zshrc ~/.zshrc"
-alias cpzshrcs="cpzshrc && srczsh"
-alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh ~/.oh-my-zsh/custom/custom_aliases.zsh"
-alias cpaliass="cpalias && srczsh"
 alias e='exit'
 alias ex='exit'
 #alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
@@ -35,16 +23,31 @@ alias srczsh="source ~/.zshrc"
 alias ra="ranger"
 alias dotf="cd /mnt/DATA/Data/David/School/dotfiles"
 
-# Apt commands
-alias ins="sudo apt install -y"
-alias upt="sudo apt update && sudo apt upgrade -y"
-alias arm="sudo apt autoremove -y"
+# Config files
+## Copy config files
+alias cpconf="
+  cpgitconfig ;
+  cpzshrc ;
+  cpalias ;
+  srczsh
+"
+alias cpgitconfig="cp ./.gitconfig ~/.gitconfig"
+alias cpgitconfigs="cpgitconfig && scrzsh"
+alias cpzshrc="cp ./.zshrc ~/.zshrc"
+alias cpzshrcs="cpzshrc && srczsh"
+alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh ~/.oh-my-zsh/custom/custom_aliases.zsh"
+alias cpaliass="cpalias && srczsh"
 
-# Open config files
+## Open config files
 alias gitconf="vim ~/.gitconfig"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshconf="vim ~/.zshrc"
 alias grubconf="sudo vim /etc/default/grub && sudo grub-update"
+
+# Apt commands
+alias ins="sudo apt install -y"
+alias upt="sudo apt update && sudo apt upgrade -y"
+alias arm="sudo apt autoremove -y"
 
 #TODO
 #alias cdg='cd ~/git '
