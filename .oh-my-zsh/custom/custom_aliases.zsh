@@ -10,8 +10,18 @@
 
 # General aliases
 alias c='clear'
-alias cpconf='cp ./.gitconfig /home/adda/.gitconfig ; cp ./.zshrc /home/adda/.zshrc ; srczsh'
-alias cpzshrc="cp ./.zshrc ~/.zshrc && srczsh"
+alias cpconf="
+  cpgitconfig ;
+  cpzshrc ;
+  cpalias ;
+  srczsh
+"
+alias cpgitconfig="cp ./.gitconfig ~/.gitconfig"
+alias cpgitconfigs="cpgitconfig && scrzsh"
+alias cpzshrc="cp ./.zshrc ~/.zshrc"
+alias cpzshrcs="cpzshrc && srczsh"
+alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh ~/.oh-my-zsh/custom/custom_aliases.zsh"
+alias cpaliass="cpalias && srczsh"
 alias e='exit'
 alias ex='exit'
 #alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
