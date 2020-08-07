@@ -39,6 +39,8 @@ alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh ~/.oh-my-zsh/custom/cus
 alias cpaliass="cpalias && srczsh"
 
 ## Open config files
+alias dotfiles="cd /mnt/DATA/Data/David/School/dotfiles/"
+alias aliases="vim ~/.oh-my-zsh/custom/custom_aliases.zsh"
 alias gitconf="vim ~/.gitconfig"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshconf="vim ~/.zshrc"
