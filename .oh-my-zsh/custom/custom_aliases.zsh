@@ -53,9 +53,12 @@ alias grubconf="sudo vim /etc/default/grub && sudo grub-update"
 #alias trash='rm -rf ~/.Trash/* '
 
 # Git aliases
+## Git command
 alias g='git'
 alias gut='git'
 alias got='git'
+
+## Git shortcuts
 alias gs='g s'
 alias gc="g c"
 alias gcs="g cs"
