@@ -1,6 +1,9 @@
 {
     "telemetry.enableTelemetry": false,
+
+    // override VSCode keycodes with system keycodes
     "keyboard.dispatch": "keyCode",
+
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "editor.wordWrap": "on",
