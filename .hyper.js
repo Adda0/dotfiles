@@ -165,5 +165,8 @@ module.exports = {
         'pane:splitHorizontal': 'ctrl+e',
         'pane:splitVertical': 'ctrl+d',
         'pane:close': 'ctrl+w',
+        'tab:new': 'ctrl+t',
+        'tab:next': 'ctrl+]',
+        'tab:prev': 'ctrl+[',
     },
 };
