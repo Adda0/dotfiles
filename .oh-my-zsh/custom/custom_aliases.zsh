@@ -25,6 +25,8 @@ alias dotf="cd /mnt/DATA/Data/David/School/dotfiles"
 alias cpr="cp -r"
 alias rmd="rm -r"
 alias c.="cd .."
+alias v="nvim"
+alias n="v"
 
 # Config files
 ## Copy config files
@@ -32,6 +34,7 @@ alias cpconf="
   cpgitconfig ;
   cpzshrc ;
   cpalias ;
+  cpnvim ;
   srczsh
 "
 alias cpgitconfig="cp ./.gitconfig ~/.gitconfig"
@@ -40,6 +43,7 @@ alias cpzshrc="cp ./.zshrc ~/.zshrc"
 alias cpzshrcs="cpzshrc && srczsh"
 alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh ~/.oh-my-zsh/custom/custom_aliases.zsh"
 alias cpaliass="cpalias && srczsh"
+alias cpnvim="cpr ./.config/nvim ~/.config/nvim"
 
 ## Open config files
 alias dotfiles="cd /mnt/DATA/Data/David/School/dotfiles/"
