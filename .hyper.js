@@ -146,7 +146,7 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ["hypercwd", "hyper-pane", "hyper-search", "hyperterm-paste", "hyper-statusline",],
+    plugins: ["hypercwd", "hyper-search", "hyperterm-paste", "hyper-statusline",],
 
     hyperStatusLine: {
         dirtyColor: 'salmon',
