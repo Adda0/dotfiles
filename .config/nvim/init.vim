@@ -1,5 +1,6 @@
-source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/vim-plug/plugins.vim
+source ~/.config/nvim/general/settings.vim
+source ~/.config/nvim/vim-plug/plugins.vim
+
 " let mapleader=" "  #TODO
 " Use system clipboard
 set clipboard+=unnamedplus
