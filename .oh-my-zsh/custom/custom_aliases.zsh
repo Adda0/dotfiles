@@ -22,6 +22,9 @@ alias tgz='tar -xvfz'
 alias srczsh="source ~/.zshrc"
 alias ra="ranger"
 alias dotf="cd /mnt/DATA/Data/David/School/dotfiles"
+alias cpr="cp -r"
+alias rmd="rm -r"
+alias c.="cd .."
 
 # Config files
 ## Copy config files
