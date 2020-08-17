@@ -131,5 +131,6 @@ function tn {
 function mkcd {
   mkdir -p -- "$1" && cd -P -- "$1"
 }
+alias mdcd="mkcd"
 
 # End of file
