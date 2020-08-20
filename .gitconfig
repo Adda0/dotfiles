@@ -77,7 +77,7 @@
     ; Used pager.
     pager = less -iFRXS -x4
     ; Used editor.
-    editor = vim
+    editor = nvim
 
 [advice]
 ;    ; Make git a little less verbose.
