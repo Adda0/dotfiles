@@ -8,10 +8,6 @@
 # Date: 7. 8. 2020
 # ====================================================
 
-# General aliases
-alias c='clear'
-alias e='exit'
-alias ex='exit'
 
 #TODO
 #alias st='open -a "Sublime Text" '
@@ -37,6 +33,7 @@ alias tarx="tar -xf"
 
 alias off="shutdown -h now"
 
+# Aliases for ls
 #alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
 alias ls="exa --all --color=always --classify --group-directories-first"
 #alias l="ls -l --human-readable --all --color" # "ls -lah --color"
@@ -44,6 +41,11 @@ alias l="exa --all --long --git --header --color=always --group-directories-firs
 alias lst="exa --tree --all --color=always --classify --color-scale"
 alias lstl="exa --tree --long --git --header --all --color=always --classify --color-scale"
 alias tgz='tar -xvfz'
+
+# General aliases
+alias c='clear'
+alias e='exit'
+alias ex='exit'
 alias srczsh="source ~/.zshrc"
 alias ra="ranger"
 alias dotf="cd /mnt/DATA/Data/David/School/dotfiles"
@@ -79,11 +81,6 @@ alias zshconf="vim ~/.zshrc"
 alias grubconf="sudo vim /etc/default/grub && sudo grub-update"
 
 # Apt commands
-#TODO
-#alias cdg='cd ~/git '
-#alias st='open -a "Sublime Text" '
-#alias bp='st ~/.bash_profile '
-#alias trash='rm -rf ~/.Trash/* '
 alias sai="sudo apt install -y"
 alias sau="sudo apt update && sudo apt upgrade -y"
 alias sap="sudo apt purge -y"
@@ -127,15 +124,6 @@ function sshg {
 
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
-
-#TODO
-#alias gs='git status -sb '
-#alias gc='git commit -m '
-#alias gac='ga -A && gc '
-#alias gr='git rm -r '
-#alias gb='git checkout -b '
-#alias gc-='git checkout - '
-#alias gd='git diff '
 
 # Clone GitHub repository with ssh
 function gcl {
