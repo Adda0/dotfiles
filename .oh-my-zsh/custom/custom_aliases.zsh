@@ -36,7 +36,12 @@ alias tgz='tar -xvfz'
 alias tarc="tar -cvzf"
 alias tarx="tar -xf"
 
+
+# shutdown or reboot # TODO
+alias ssn="sudo shutdown now"
 alias off="shutdown -h now"
+alias sr="sudo reboot"
+
 
 # Aliases for ls
 #alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
