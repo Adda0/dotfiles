@@ -35,9 +35,11 @@ alias off="shutdown -h now"
 
 # Aliases for ls
 #alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
-alias ls="exa --all --color=always --classify --group-directories-first"
+alias ls="exa --all --color=always --classify --group-directories-first --sort=oldest"
 #alias l="ls -l --human-readable --all --color" # "ls -lah --color"
-alias l="exa --all --long --git --header --color=always --group-directories-first --classify --color-scale" # "exa -la --color=always --group-directories-first"
+alias l="exa --all --long --git --header --color=always --group-directories-first --classify --color-scale --sort=oldest"
+alias lsn="exa --all --long --git --header --color=always --classify --color-scale --sort=newest"
+alias lso="exa --all --long --git --header --color=always --classify --color-scale --sort=oldest"
 alias lst="exa --tree --all --color=always --classify --color-scale"
 alias lstl="exa --tree --long --git --header --all --color=always --classify --color-scale"
 alias tgz='tar -xvfz'
