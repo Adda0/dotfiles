@@ -35,14 +35,14 @@ alias cpconf="
   cpzshrc ;
   cpalias ;
   cpnvim ;
-  srczsh
+  srczsh && c
 "
 alias cpgitconfig="cp ./.gitconfig ~/.gitconfig"
-alias cpgitconfigs="cpgitconfig && scrzsh"
+alias cpgitconfigs="cpgitconfig && scrzsh && c"
 alias cpzshrc="cp ./.zshrc ~/.zshrc"
-alias cpzshrcs="cpzshrc && srczsh"
+alias cpzshrcs="cpzshrc && srczsh && c"
 alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh ~/.oh-my-zsh/custom/custom_aliases.zsh"
-alias cpaliass="cpalias && srczsh"
+alias cpaliass="cpalias && srczsh && c"
 alias cpnvim="cpr ./.config/nvim ~/.config/nvim"
 
 ## Open config files
