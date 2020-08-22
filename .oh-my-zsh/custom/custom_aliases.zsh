@@ -14,7 +14,6 @@
 #alias bp='st ~/.bash_profile '
 #alias trash='rm -rf ~/.Trash/* '
 #alias gr='git rm -r '
-#alias gb='git checkout -b '
 #alias gc-='git checkout - '
 
 alias ytdl='youtube-dl'
@@ -112,7 +111,7 @@ alias got='git'
 
 ## Git shortcuts
 alias gi="g i"
-alias gs='g s'
+alias gb='g cob'
 alias gc="g c"
 alias gcs="g cs"
 alias gap="g ap"
@@ -126,6 +125,7 @@ alias gars="g ars"
 alias gr="g r"
 alias gpo="gp origin"
 alias gpom="gp origin master"
+alias gs='g s'
 
 # GPG aliases
 alias gpgl="gpg --list-secret-keys --keyid-format LONG"
