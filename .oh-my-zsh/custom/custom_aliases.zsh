@@ -12,6 +12,31 @@
 alias c='clear'
 alias e='exit'
 alias ex='exit'
+
+#TODO
+#alias st='open -a "Sublime Text" '
+#alias bp='st ~/.bash_profile '
+#alias trash='rm -rf ~/.Trash/* '
+#alias gr='git rm -r '
+#alias gb='git checkout -b '
+#alias gc-='git checkout - '
+
+alias ytdl='youtube-dl'
+
+# Processes
+alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
+alias pse="\ps -e --forest" # list processes as a tree
+alias psg="\ps aux | grep -v grep | grep -i -e VSZ -e" # search for a running process. example: psg firefox
+alias psr="\ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head" # list top 10 cpu-intensive processes
+alias pst="\ps -eo pid,comm,lstart,etimes,time,args"
+
+# Tar commands
+alias tgz='tar -xvfz'
+alias tarc="tar -cvzf"
+alias tarx="tar -xf"
+
+alias off="shutdown -h now"
+
 #alias ls="ls --no-group --classify --human-readable --all --color" # "ls -GFha --color"
 alias ls="exa --all --color=always --classify --group-directories-first"
 #alias l="ls -l --human-readable --all --color" # "ls -lah --color"
