@@ -150,6 +150,7 @@ alias gaaa="g aaa"
 alias glga="g lga"
 alias ga="g a"
 alias gp="g p"
+alias gpl="g pl"
 alias gd='g d'
 alias gars="g ars"
 alias gr="g r"
