@@ -123,9 +123,15 @@ alias grubconf="sudo vim /etc/default/grub && sudo grub-update"
 
 # Apt commands
 alias sai="sudo apt install -y"
+alias dai="doas apt install -y"
 alias sau="sudo apt update && sudo apt upgrade -y"
+alias dau="doas apt update && doas apt upgrade -y"
 alias sap="sudo apt purge -y"
+alias dap="doas apt purge -y"
 alias sar="sudo apt autoremove -y"
+alias dar="doas apt autoremove -y"
+alias rem='sudo apt autoremove --purge'
+
 
 # Git aliases
 ## Git command
