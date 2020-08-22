@@ -61,6 +61,9 @@ alias lsn="exa --all --long --git --header --color=always --classify --color-sca
 alias lso="exa --all --long --git --header --color=always --classify --color-scale --sort=oldest"
 alias lst="exa --tree --all --color=always --classify --color-scale"
 alias lstl="exa --tree --long --git --header --all --color=always --classify --color-scale"
+alias l.='exa -a | egrep "^\."'
+
+
 
 # libre office convert docx and pptx to pdf
 alias lowpdf="lowriter --convert-to pdf"
