@@ -143,6 +143,7 @@ function sshg {
 
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
+#alias myip="curl --silent https://ipecho.net/plain; echo"
 
 # Clone GitHub repository with ssh
 function gcl {
