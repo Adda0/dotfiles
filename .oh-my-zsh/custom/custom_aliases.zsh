@@ -42,7 +42,23 @@ alias lsn="exa --all --long --git --header --color=always --classify --color-sca
 alias lso="exa --all --long --git --header --color=always --classify --color-scale --sort=oldest"
 alias lst="exa --tree --all --color=always --classify --color-scale"
 alias lstl="exa --tree --long --git --header --all --color=always --classify --color-scale"
-alias tgz='tar -xvfz'
+
+# libre office convert docx and pptx to pdf
+alias lowpdf="lowriter --convert-to pdf"
+
+alias brave="brave-browser"
+
+# fzf wrappers
+alias fzfcd='fzfcd() { cd "$(find -type d 2>/dev/null | fzf)" ;}; fzfcd'
+alias fzfed='fzfed() { $EDITOR "$(find -type f 2>/dev/null | fzf)" ;}; fzfed'
+
+# find
+alias fd="find -name"
+
+
+
+
+set -o vi
 
 # General aliases
 alias c='clear'
