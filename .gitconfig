@@ -186,6 +186,7 @@
     bl = blame
     br = branch --verbose
     bra = branch --all --verbose
+    brd = branch --verbose -d
     cc = rev-list --count # git rev-list --count <revision>
     cca = rev-list --all --count
     clear = reset --hard
