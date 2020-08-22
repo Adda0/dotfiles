@@ -228,6 +228,7 @@
     rbc = rebase --continue
     rbi = rebase --interactive
     rbis = rebase --interactive --gpg-sign
+    rbim = rebase -i master
     s = status --short --branch
     sm = submodule
     sma = submodule add

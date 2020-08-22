@@ -11,7 +11,7 @@ set clipboard+=unnamedplus
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
-autocmd FileType tex,latex,markdown setlocal spell spelllang=en_au
+autocmd FileType tex,latex,markdown setlocal spell spelllang=en_uk
 
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
@@ -32,6 +32,7 @@ nmap Y y$
 " Fix indenting visual block
 vmap < <gv
 vmap > >gv
+
 
 " Enable and disable auto comment
 map <leader>c :setlocal formatoptions-=cro<CR>
@@ -101,79 +102,22 @@ autocmd FileType markdown inoremap ,u +<Space><CR><++><Esc>1k<S-a>
 autocmd FileType markdown inoremap ,o 1.<Space><CR><++><Esc>1k<S-a>
 autocmd FileType markdown inoremap ,f +@fig:
 
-if !exists('g:vscode')
-  " Themes
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
-  Plug 'tomasiser/vim-code-dark'
-  " Code Completion
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  " Tags
-  Plug 'alvan/vim-closetag'
-  Plug 'tpope/vim-surround'
-	Plug 'mattn/emmet-vim'
-  " Commenting
-  Plug 'tpope/vim-commentary'
-  " Syntax highlighting
-  Plug 'HerringtonDarkholme/yats.vim'
-  Plug 'yuezk/vim-js'
-  Plug 'maxmellon/vim-jsx-pretty'
-	Plug 'rust-lang/rust.vim'
-	" Motions
-	Plug 'easymotion/vim-easymotion'
-	" Git
-  Plug 'airblade/vim-gitgutter'
-	Plug 'tpope/vim-fugitive'
-	" Misc
-  Plug 'junegunn/fzf.vim'
-  Plug 'junegunn/goyo.vim'
-  Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-	Plug 'vimwiki/vimwiki'
-	Plug 'tpope/vim-repeat'
-	Plug 'dhruvasagar/vim-table-mode'
 
-  call plug#end()
+    " Vim Wiki
+    let g:vimwiki_list = [{'auto_diary_index': 1}]
 
-  " Basic settings
-  set mouse=a
-  syntax on
-  set ignorecase
-  set smartcase
-  set encoding=utf-8
-  set number relativenumber
-  set termguicolors
-  colorscheme codedark
+    " Easy Motion
+    map <leader><leader>. <Plug>(easymotion-repeat)
+    map <leader><leader>f <Plug>(easymotion-overwin-f)
+    map <leader><leader>j <Plug>(easymotion-overwin-line)
+    map <leader><leader>k <Plug>(easymotion-overwin-line)
+    map <leader><leader>w <Plug>(easymotion-overwin-w)
 
-  " Tab Settings
-  set shiftwidth=2
-  set softtabstop=2
-  set tabstop=2
+    " Emmet
+    let g:user_emmet_leader_key='<A-c>'
 
-  " Autocompletion
-  set wildmode=longest,list,full
-
-  " Fix splitting
-  set splitbelow splitright
-
-  " Cursor line
-  set cursorline
-  set cursorcolumn
-
-	" Vim Wiki
-	let g:vimwiki_list = [{'auto_diary_index': 1}]
-
-	" Easy Motion
-	map <leader><leader>. <Plug>(easymotion-repeat)
-	map <leader><leader>f <Plug>(easymotion-overwin-f)
-	map <leader><leader>j <Plug>(easymotion-overwin-line)
-	map <leader><leader>k <Plug>(easymotion-overwin-line)
-	map <leader><leader>w <Plug>(easymotion-overwin-w)
-
-	" Emmet
-	let g:user_emmet_leader_key='<A-c>'
-
-	" Table mode
-	let g:table_mode_delete_row_map = "<leader>tdr"
+    " Table mode
+    let g:table_mode_delete_row_map = "<leader>tdr"
 
   " Goyo
   noremap <leader>g :Goyo<CR>
@@ -212,13 +156,13 @@ if !exists('g:vscode')
   autocmd VimEnter * HexokinaseTurnOn
 
   " vim fzf
-	nnoremap <A-g> :GFiles<CR>
-	nnoremap <A-z> :Files<CR>
-	let g:fzf_preview_window = 'right:60%'
+    nnoremap <A-g> :GFiles<CR>
+    nnoremap <A-z> :Files<CR>
+    let g:fzf_preview_window = 'right:60%'
 
-	command! -bang -nargs=? -complete=dir Files
+    command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, {'options': ['--preview', 'preview {}']}, <bang>0)
-	command! -bang -nargs=? -complete=dir GFiles
+    command! -bang -nargs=? -complete=dir GFiles
     \ call fzf#vim#gitfiles(<q-args>, {'options': ['--preview', 'preview {}']}, <bang>0)
 
   " Netrw
@@ -297,7 +241,7 @@ if !exists('g:vscode')
   " Make netrw act like a project Draw
   augroup ProjectDrawer
     autocmd!
-		" Don't open Netrw
+        " Don't open Netrw
     autocmd VimEnter ~/.config/joplin/tmp/*,/tmp/calcurse*,~/.calcurse/notes/*,~/vimwiki/*,*/.git/COMMIT_EDITMSG let b:noNetrw=1
     autocmd VimEnter * :call NetrwOnBufferOpen()
   augroup END
@@ -352,19 +296,6 @@ if !exists('g:vscode')
     \ 'coc-angular',
     \ 'coc-vimtex'
     \ ]
-
-  " From Coc Readme
-  set updatetime=300
-
-  " Some servers have issues with backup files, see #649
-  set nobackup
-  set nowritebackup
-
-  " don't give |ins-completion-menu| messages.
-  set shortmess+=c
-
-  " always show signcolumns
-  set signcolumn=yes
 
   " Use tab for trigger completion with characters ahead and navigate.
   " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -445,6 +376,5 @@ if !exists('g:vscode')
   " use `:OR` for organize import of current buffer
   command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-  " Add status line support, for integration with other plugin, checkout `:h coc-status`
-  set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
 endif
