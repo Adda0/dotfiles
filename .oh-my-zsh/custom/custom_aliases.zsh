@@ -93,7 +93,8 @@ alias cpr="cp -r"
 alias rmd="rm -r"
 alias c.="cd .."
 alias v="nvim"
-alias n="v"
+alias n="nvim"
+alias nv='nvim'
 
 # Config files
 ## Copy config files
