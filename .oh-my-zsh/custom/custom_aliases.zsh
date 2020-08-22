@@ -31,6 +31,15 @@ alias psg="\ps aux | grep -v grep | grep -i -e VSZ -e" # search for a running pr
 alias psr="\ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head" # list top 10 cpu-intensive processes
 alias pst="\ps -eo pid,comm,lstart,etimes,time,args"
 
+## get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+## get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+
 # Tar commands
 alias tgz='tar -xvfz'
 alias tarc="tar -cvzf"
