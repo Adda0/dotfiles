@@ -54,15 +54,15 @@ alias zshconf="vim ~/.zshrc"
 alias grubconf="sudo vim /etc/default/grub && sudo grub-update"
 
 # Apt commands
-alias ins="sudo apt install -y"
-alias upt="sudo apt update && sudo apt upgrade -y"
-alias arm="sudo apt autoremove -y"
-
 #TODO
 #alias cdg='cd ~/git '
 #alias st='open -a "Sublime Text" '
 #alias bp='st ~/.bash_profile '
 #alias trash='rm -rf ~/.Trash/* '
+alias sai="sudo apt install -y"
+alias sau="sudo apt update && sudo apt upgrade -y"
+alias sap="sudo apt purge -y"
+alias sar="sudo apt autoremove -y"
 
 # Git aliases
 ## Git command
