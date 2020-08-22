@@ -124,6 +124,10 @@ source $ZSH/oh-my-zsh.sh
 # Completion.
 #------------------------------------------------------------------------------
 
+#ignore upper and lowercase when TAB completion
+bind "set completion-ignore-case on"
+
+
 # git
 #if [[ -f ~/.git-completion.bash ]]; then
 #    source ~/.git-completion.bash
