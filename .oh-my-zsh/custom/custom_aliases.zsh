@@ -287,3 +287,45 @@ alias py='python3'
 
 
 # End of file
+
+
+
+
+
+
+alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
+
+alias t='tail -f'
+
+# Command line head / tail shortcuts
+alias -g H='| head'
+alias -g T='| tail'
+alias -g G='| grep'
+alias -g L="| less"
+alias -g M="| most"
+alias -g LL="2>&1 | less"
+alias -g CA="2>&1 | cat -A"
+alias -g NE="2> /dev/null"
+alias -g NUL="> /dev/null 2>&1"
+alias -g P="2>&1| pygmentize -l pytb"
+
+alias dud='du -d 1 -h'
+alias duf='du -sh *'
+
+alias h='history'
+alias hgrep="fc -El 0 | grep"
+#alias help='man'
+#alias p='ps -f'
+alias sortnr='sort -n -r'
+alias unexport='unset'
+
+alias gds-start='sudo systemctl start openvpn-client@gds'
+alias gds-stop='sudo systemctl stop openvpn-client@gds'
+#gitpush() {
+#    git add .
+#    git commit -m "$*"
+#    git pull
+#    git push
+#}
+#alias gp=gitpush
+alias lbrynet='/opt/LBRY/resources/static/daemon/lbrynet'
