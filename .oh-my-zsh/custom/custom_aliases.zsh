@@ -64,6 +64,9 @@ alias lstl="exa --tree --long --git --header --all --color=always --classify --c
 alias l.='exa -a | egrep "^\."'
 
 
+#alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
+#alias lS='ls -1FSsh'
+
 
 # libre office convert docx and pptx to pdf
 alias lowpdf="lowriter --convert-to pdf"
