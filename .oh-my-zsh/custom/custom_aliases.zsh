@@ -160,6 +160,9 @@ alias gpo="gp origin"
 alias gpom="gp origin master"
 alias gs='g s'
 
+function acp() {
+  gaaa && gcs && gp
+}
 
 # GPG aliases
 alias gpgl="gpg --list-secret-keys --keyid-format LONG"
