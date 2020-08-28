@@ -17,6 +17,7 @@
 #alias gc-='git checkout - '
 
 # navigation
+alias c.="cd .."
 alias ..='cd ..'
 alias ...='cd ../..'
 alias .3='cd ../../..'
@@ -89,7 +90,6 @@ alias srczsh="source ~/.zshrc"
 alias ra="ranger"
 alias cpr="cp -r"
 alias rmd="rm -r"
-alias c.="cd .."
 alias v="nvim"
 alias n="nvim"
 alias nv='nvim'
