@@ -87,7 +87,6 @@ alias e='exit'
 alias ex='exit'
 alias srczsh="source ~/.zshrc"
 alias ra="ranger"
-alias dotf="cd /mnt/DATA/Data/David/School/dotfiles"
 alias cpr="cp -r"
 alias rmd="rm -r"
 alias c.="cd .."
@@ -113,7 +112,8 @@ alias cpaliass="cpalias && srczsh && c"
 alias cpnvim="cpr ./.config/nvim ~/.config/nvim"
 
 ## Open config files
-alias dotfiles="cd /mnt/DATA/Data/David/School/dotfiles/"
+alias dotf="cd /mnt/DATA/Data/David/it/dotfiles"
+alias dotfiles="cd /mnt/DATA/Data/David/it/dotfiles"
 alias aliases="vim ~/.oh-my-zsh/custom/custom_aliases.zsh"
 alias gitconf="vim ~/.gitconfig"
 alias ohmyzsh="vim ~/.oh-my-zsh"
