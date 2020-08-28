@@ -81,7 +81,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+
+# command-not-found: If a command is not recognized in the $PATH, this will use Ubuntu’s command-not-found package to find it or suggest spelling mistakes (Only for Ubuntu and openSUSE).
+# sudo: Hitting `ESC` twice puts sudo in front of the current command, or the last one if the command line is empty.
+# vscode: Makes interaction between the command line and the code editor easier.
+plugins=(git zsh-autosuggestions z command-not-found sudo vscode)
+
 
 source $ZSH/oh-my-zsh.sh
 
