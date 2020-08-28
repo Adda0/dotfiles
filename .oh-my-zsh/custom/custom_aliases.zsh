@@ -11,8 +11,8 @@
 
 #TODO
 #alias st='open -a "Sublime Text" '
-#alias bp='st ~/.bash_profile '
-#alias trash='rm -rf ~/.Trash/* '
+#alias bp='st $HOME/.bash_profile '
+#alias trash='rm -rf $HOME/.Trash/* '
 #alias gr='git rm -r '
 #alias gc-='git checkout - '
 
@@ -88,7 +88,7 @@ set -o vi
 alias c='clear'
 alias e='exit'
 alias ex='exit'
-alias srczsh="source ~/.zshrc"
+alias srczsh="source $HOME/.config/zsh/.zshrc"
 alias ra="ranger"
 alias cpr="cp -r"
 alias rmd="rm -r"
@@ -105,22 +105,23 @@ alias cpconf="
   cpnvim ;
   srczsh && c
 "
-alias cpgitconfig="cp ./.gitconfig ~/.gitconfig"
+alias cpgitconfig="cp ./.gitconfig $HOME/.gitconfig"
 alias cpgitconfigs="cpgitconfig && scrzsh && c"
-alias cpzshrc="cp ./.zshrc ~/.zshrc"
+alias cpzshrc="cp ./.config/zsh/.zshrc $HOME/.config/zsh/.zshrc"
 alias cpzshrcs="cpzshrc && srczsh && c"
-alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh ~/.oh-my-zsh/custom/custom_aliases.zsh"
+alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh $HOME/.oh-my-zsh/custom/custom_aliases.zsh"
 alias cpaliass="cpalias && srczsh && c"
-alias cpnvim="cpr ./.config/nvim ~/.config/nvim"
+alias cpnvim="cpr ./.config/nvim $HOME/.config/nvim"
 
 ## Open config files
 alias dotf="cd /mnt/DATA/Data/David/it/dotfiles"
 alias dotfiles="cd /mnt/DATA/Data/David/it/dotfiles"
-alias aliases="vim ~/.oh-my-zsh/custom/custom_aliases.zsh"
-alias gitconf="vim ~/.gitconfig"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias zshconf="vim ~/.zshrc"
-alias grubconf="sudo vim /etc/default/grub && sudo grub-update"
+alias aliases="${=EDITOR} $HOME/.oh-my-zsh/custom/custom_aliases.zsh"
+alias gitconf="${=EDITOR} $HOME/.gitconfig"
+alias ohmyzsh="${=EDITOR} $HOME/.oh-my-zsh"
+alias zshrc="${=EDITOR} $HOME/.zshrc" # Quick access to the $HOME/.zshrc file
+alias zshconf="${=EDITOR} $HOME/.config/zsh/.zshrc"
+alias grubconf="sudo ${=EDITOR} /etc/default/grub && sudo grub-update"
 
 # Apt commands
 alias sai="sudo apt install -y"
@@ -167,7 +168,7 @@ alias gpge="gpg --armor --export $0"
 
 # SSH key aliases
 # Lists the files in your .ssh directory, if they exist.
-alias sshl="ls -al ~/.ssh"
+alias sshl="ls -al $HOME/.ssh"
 # Generating public/private rsa key pair.
 # ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 function sshg {
@@ -238,12 +239,12 @@ alias rm='rm -i'
 # adding flags
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
-alias lynx='lynx -cfg=~/.lynx/lynx.cfg -lss=~/.lynx/lynx.lss -vikeys'
+alias lynx='lynx -cfg=$HOME/.lynx/lynx.cfg -lss=$HOME/.lynx/lynx.lss -vikeys'
 alias vifm='./.config/vifm/scripts/vifmrun'
 
 
 # Merge Xresources
-alias merge='xrdb -merge ~/.Xresources'
+alias merge='xrdb -merge $HOME/.Xresources'
 
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
