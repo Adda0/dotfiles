@@ -100,10 +100,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='nvim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
+export EDITOR='nvim'
+
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -155,8 +157,6 @@ export PATH="$PATH:/home/adda/.local/bin"
 #autoload -U colors && colors
 #PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-# Custom Variables
-export EDITOR=nvim
 
 #DEFAULT_USER=your_user_name
 
