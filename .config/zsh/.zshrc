@@ -15,7 +15,6 @@ PATH="$HOME/.cargo/bin${PATH:+:${PATH}}":
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/adda/.oh-my-zsh"
-source ~/.config/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -85,7 +84,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # command-not-found: If a command is not recognized in the $PATH, this will use Ubuntu’s command-not-found package to find it or suggest spelling mistakes (Only for Ubuntu and openSUSE).
 # sudo: Hitting `ESC` twice puts sudo in front of the current command, or the last one if the command line is empty.
 # vscode: Makes interaction between the command line and the code editor easier.
-plugins=(git zsh-autosuggestions z command-not-found sudo vscode)
+plugins=(git zsh-autosuggestions z command-not-found sudo vscode fast-syntax-highlighting)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -184,7 +183,6 @@ source ~/.p10k.zsh
 
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
 
