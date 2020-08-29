@@ -121,30 +121,6 @@ export EDITOR='nvim'
 
 
 
-# Customize Terminal Prompt - Shows: username/../folder:
-#export PS1='\n\u/../\W/: '
-
-
-
-#------------------------------------------------------------------------------
-# Completion.
-#------------------------------------------------------------------------------
-
-#ignore upper and lowercase when TAB completion
-bind "set completion-ignore-case on"
-
-
-# git
-#if [[ -f ~/.git-completion.bash ]]; then
-#    source ~/.git-completion.bash
-#fi
-#complete -o default -o nospace -F git g
-
-
-#  Add Colour
-#export CLICOLOR=1
-#export LSCOLORS=GxFxCxDxBxegedabagaced
-
 #------------------------------------------------------------------------------
 # Environmental variables.
 #------------------------------------------------------------------------------
