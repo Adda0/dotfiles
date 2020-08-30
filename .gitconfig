@@ -192,6 +192,7 @@
     clear = reset --hard
     cl = clone
     conflicts = diff --name-only --diff-filter=U --relative
+    cm = checkout master
     co = checkout
     cob = checkout -b
     cop = checkout -p
