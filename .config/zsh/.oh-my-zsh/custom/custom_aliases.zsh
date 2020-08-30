@@ -82,8 +82,6 @@ alias fd="find -name"
 alias fcd='find . -type d -name' # find directory starting from current directory
 alias fcf='find . -type f -name' # find file starting from current directory
 
-set -o vi
-
 # General aliases
 alias c='clear'
 alias e='exit'

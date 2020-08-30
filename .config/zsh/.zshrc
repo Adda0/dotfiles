@@ -14,7 +14,7 @@
 PATH="$HOME/.cargo/bin${PATH:+:${PATH}}":
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/adda/.oh-my-zsh"
+export ZSH="/home/adda/.config/zsh/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
