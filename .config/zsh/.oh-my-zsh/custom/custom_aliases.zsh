@@ -92,6 +92,8 @@ alias cpr="cp -r"
 alias rmd="rm -r"
 alias v="nvim"
 alias n="nvim"
+alias ne="nemo"
+alias nec="nemo ."
 alias nv='nvim'
 
 # Config files
