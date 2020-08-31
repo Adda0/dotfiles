@@ -101,6 +101,9 @@ plugins=(
     command-not-found
 )
 
+# dotenv plugin: in ~/.zshrc, before Oh My Zsh is sourced:
+ZSH_DOTENV_FILE=.dotenv
+
 source $ZSH/oh-my-zsh.sh
 
 #------------------------------------------------------------------------------
