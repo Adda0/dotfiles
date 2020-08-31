@@ -161,13 +161,6 @@ SAVEHIST=10000
 HISTFILE=~/.cache/zshhistory
 setopt appendhistory
 
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
-
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -175,25 +168,15 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots) # show hidden files in TAB completion.
 
-# Custom ZSH Binds
-bindkey '^ ' autosuggest-accept
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 source ~/.p10k.zsh
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Load ; should be last.
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-neofetch
+#neofetch
 
 # End of file
-
-
-
-
-
-# Load aliases and shortcuts if existent.
-#[ -f "$HOME/zsh/aliasrc" ] && source "$HOME/zsh/aliasrc"
