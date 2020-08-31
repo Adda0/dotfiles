@@ -251,6 +251,7 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias rm='trash'
 # adding flags
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
