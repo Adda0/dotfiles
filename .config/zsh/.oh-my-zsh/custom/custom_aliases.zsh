@@ -95,6 +95,7 @@ alias n="nvim"
 alias ne="nemo"
 alias nec="nemo ."
 alias nv='nvim'
+alais md='mkdir'
 
 # Config files
 ## Copy config files
