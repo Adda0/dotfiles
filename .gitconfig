@@ -215,9 +215,8 @@
     ll = log --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'
     lf = log --name-status --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'
     lp = log --patch --format=fuller
-    lg = log --graph --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'
-    ;lg = log --all --color\n--graph --pretty=format:'%Cred%h%Creset\n%Cgreen(%ad)%Creset -%C(yellow)%d%Creset %s\n%C(bold blue)<%an>%Creset %Cgreen(%cr)%Creset\n'--abbrev-commit --date=short
-    lga = log --graph --branches --remotes --tags --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s'
+    lg = log --graph --pretty='format:%C(yellow)%h %C(green)%ai %C(bold blue)%an %C(red)%d%C(reset) %s %Cgreen(%cr)'
+    lga = log --all --graph --branches --remotes --tags --pretty='format:%C(yellow)%h %C(green)(%ad) %C(bold blue)%an %C(red)%d%C(reset) %s %Cgreen(%cr)'
     m = merge --no-ff
     ma = merge --abort
     p = push
