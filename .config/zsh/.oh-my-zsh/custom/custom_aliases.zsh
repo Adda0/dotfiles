@@ -191,17 +191,23 @@ function gcl {
 
 # Rename Terminal Window - Usage: wn 'window name'
 function wn {
-	printf "\e]2;$1\a"
+    printf "\e]2;$1\a"
 }
+
+function cdls {
+    builtin cd "$@"; l;
+}
+
+
 
 # Rename Terminal Tab - Usage: tn 'tab name'
 function tn {
-	printf "\e]1;$1\a"
+    printf "\e]1;$1\a"
 }
 
 # Make directory and cd into it – usage: mkcd 'dir_name'
 function mkcd {
-  mkdir -p -- "$1" && cd -P -- "$1"
+    mkdir -p -- "$1" && cd -P -- "$1"
 }
 alias mdcd="mkcd"
 
