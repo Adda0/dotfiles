@@ -110,7 +110,7 @@ alias cpgitconfig="cp ./.gitconfig $HOME/.gitconfig"
 alias cpgitconfigs="cpgitconfig && scrzsh && c"
 alias cpzshrc="cp ./.config/zsh/.zshrc $HOME/.config/zsh/.zshrc"
 alias cpzshrcs="cpzshrc && srczsh && c"
-alias cpalias="cp ./.oh-my-zsh/custom/custom_aliases.zsh $HOME/.oh-my-zsh/custom/custom_aliases.zsh"
+alias cpalias="cp ./.config/zsh/.oh-my-zsh/custom/custom_aliases.zsh $HOME/.config/zsh/.oh-my-zsh/custom/custom_aliases.zsh"
 alias cpaliass="cpalias && srczsh && c"
 alias cpnvim="cpr ./.config/nvim $HOME/.config/nvim"
 
