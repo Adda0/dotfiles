@@ -184,6 +184,7 @@
     # else
     authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
     bl = blame
+    #b = branch --verbose
     br = branch --verbose
     bra = branch --all --verbose
     brd = branch --verbose -d
@@ -225,12 +226,14 @@
     db = "!git branch --delete \"$1\" && git push origin --delete \"$1\" #"
     pl = pull --rebase=merges --autostash --stat --prune
     r = reset
+    rh = reset HEAD~ # last commit
     rb = rebase --rebase-merges
     rba = rebase --abort
     rbc = rebase --continue
     rbi = rebase --interactive
     rbis = rebase --interactive --gpg-sign
     rbim = rebase -i master
+    rf = reflog
     s = status --short --branch
     sm = submodule
     sma = submodule add
