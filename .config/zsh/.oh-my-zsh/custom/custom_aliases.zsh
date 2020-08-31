@@ -237,6 +237,10 @@ function ex {
   fi
 }
 
+
+alias aliasa='alias | less' # show all aliases
+
+
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
