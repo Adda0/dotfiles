@@ -167,7 +167,17 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots) # show hidden files in TAB completion.
+bindkey -M menuselect '^M' .accept-line
 
+# vi mode TODO what to keep and what to delete
+set -o vi
+bindkey -v
+
+
+zstyle ':completion:*:descriptions' format '%B%d%b'
+zstyle ':completion:*:messages' format '%d'
+zstyle ':completion:*:warnings' format 'No matches for: %d'
+zstyle ':completion:*' group-name ''
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 source ~/.p10k.zsh
