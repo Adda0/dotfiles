@@ -84,8 +84,22 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # command-not-found: If a command is not recognized in the $PATH, this will use Ubuntu’s command-not-found package to find it or suggest spelling mistakes (Only for Ubuntu and openSUSE).
 # sudo: Hitting `ESC` twice puts sudo in front of the current command, or the last one if the command line is empty.
 # vscode: Makes interaction between the command line and the code editor easier.
-plugins=(git zsh-autosuggestions z command-not-found sudo vscode fast-syntax-highlighting)
 
+# yarn rake cloudfoundry
+plugins=(
+    git
+    zsh-autosuggestions
+    fast-syntax-highlighting
+    z
+    sudo
+    vscode
+    last-working-dir
+    dotenv
+    web-search
+    history
+    extract
+    command-not-found
+)
 
 source $ZSH/oh-my-zsh.sh
 
