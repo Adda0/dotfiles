@@ -95,7 +95,7 @@ alias n="nvim"
 alias ne="nemo"
 alias nec="nemo ."
 alias nv='nvim'
-alais md='mkdir'
+alias md='mkdir'
 
 # Config files
 ## Copy config files
@@ -326,19 +326,12 @@ alias dud='du -d 1 -h'
 alias duf='du -sh *'
 
 alias h='history'
+alias dirs='dirs -v | head -10'
 alias hgrep="fc -El 0 | grep"
-#alias help='man'
 #alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
 
 alias gds-start='sudo systemctl start openvpn-client@gds'
 alias gds-stop='sudo systemctl stop openvpn-client@gds'
-#gitpush() {
-#    git add .
-#    git commit -m "$*"
-#    git pull
-#    git push
-#}
-#alias gp=gitpush
 alias lbrynet='/opt/LBRY/resources/static/daemon/lbrynet'
