@@ -184,6 +184,10 @@ function sshg {
 alias myip='curl ipinfo.io/ip'
 #alias myip="curl --silent https://ipecho.net/plain; echo"
 
+# Print website IP address
+alias pingo="ping -c 1"
+
+
 # Clone GitHub repository with ssh
 function gcl {
     git clone ssh://git@github.com/$1/$2.git;
