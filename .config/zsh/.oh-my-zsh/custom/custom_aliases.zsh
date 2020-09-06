@@ -92,8 +92,8 @@ alias cpr="cp -r"
 alias rmd="rm -r"
 alias v="nvim"
 alias n="nvim"
-alias ne="nemo"
-alias nec="nemo ."
+alias ne="nemo 2>/dev/null &"  # open Nemo in home directory
+alias nec="nemo . 2>/dev/null &"  # open Nemo in the current directory
 alias nv='nvim'
 alias md='mkdir'
 
