@@ -71,11 +71,15 @@
 ;    match = yellow bold
 ;    separator = cyan
 
+[interactive]
+    diffFilter = delta --color-only
+
 [core]
     ; Whitespace problems that git should recognize.
     whitespace = trailing-space,space-before-tab
     ; Used pager.
-    pager = diff-so-fancy | less --tabs=4 -RFX
+    ;pager = diff-so-fancy | less --tabs=4 -RFX
+    pager = delta
     ; Used editor.
     editor = nvim
 
@@ -83,6 +87,11 @@
     show = diff-so-fancy | less --tabs=1,5 -RFX
     diff = diff-so-fancy | less --tabs=4 -RFXS --pattern '^(Date|added|deleted|modified): '
 
+[delta]
+    line-numbers = true
+    plus-color = "#012800"
+    minus-color = "#340001"
+    syntax-theme = Monokai Extended
 
 [advice]
 ;    ; Make git a little less verbose.
