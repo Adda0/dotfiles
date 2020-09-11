@@ -147,6 +147,7 @@ alias gi="g i"
 alias gb='g cob'
 alias gc="g c"
 alias gcm="g cm"
+alias gcom="g cm"
 alias gcs="g cs"
 alias gap="g ap"
 alias gaa="g aa"
