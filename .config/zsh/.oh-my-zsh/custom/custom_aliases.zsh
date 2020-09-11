@@ -187,7 +187,6 @@ alias myip='curl ipinfo.io/ip'
 # Print website IP address
 alias pingo="ping -c 1"
 
-
 # Clone GitHub repository with ssh
 function gcl {
     git clone ssh://git@github.com/$1/$2.git;
@@ -201,8 +200,6 @@ function wn {
 function cdls {
     builtin cd "$@"; l;
 }
-
-
 
 # Rename Terminal Tab - Usage: tn 'tab name'
 function tn {
@@ -241,9 +238,7 @@ function ex {
   fi
 }
 
-
 alias aliasa='alias | less' # show all aliases
-
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
