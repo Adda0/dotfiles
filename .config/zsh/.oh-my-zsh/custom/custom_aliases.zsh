@@ -104,15 +104,17 @@ alias cpconf="
   cpzshrc ;
   cpalias ;
   cpnvim ;
+  cpranger ;
   srczsh && c
 "
-alias cpgitconfig="cp ./.gitconfig $HOME/.gitconfig"
+alias cpgitconfig="yes | cp ./.gitconfig $HOME/.gitconfig"
 alias cpgitconfigs="cpgitconfig && scrzsh && c"
-alias cpzshrc="cp ./.config/zsh/.zshrc $HOME/.config/zsh/.zshrc"
+alias cpzshrc="yes | cp ./.config/zsh/.zshrc $HOME/.config/zsh/.zshrc"
 alias cpzshrcs="cpzshrc && srczsh && c"
-alias cpalias="cp ./.config/zsh/.oh-my-zsh/custom/custom_aliases.zsh $HOME/.config/zsh/.oh-my-zsh/custom/custom_aliases.zsh"
-alias cpaliass="cpalias && srczsh && c"
-alias cpnvim="cpr ./.config/nvim $HOME/.config/nvim"
+alias cpalias="yes | cp ./.config/zsh/.oh-my-zsh/custom/custom_aliases.zsh $HOME/.config/zsh/.oh-my-zsh/custom/custom_aliases.zsh"
+alias cpaliass=" cpalias && srczsh && c"
+alias cpnvim="yes | cpr ./.config/nvim $HOME/.config/"
+alias cpranger="yes | cpr ./.config/ranger $HOME/.config/"
 
 ## Open config files
 alias dotf="cd /mnt/DATA/Data/David/it/dotfiles"
