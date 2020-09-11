@@ -39,8 +39,9 @@ if !exists('g:vscode')
         " Misc
         Plug 'junegunn/fzf.vim'
         Plug 'junegunn/goyo.vim'
-        Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+        " Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
         Plug 'vimwiki/vimwiki'
         Plug 'tpope/vim-repeat'
         Plug 'dhruvasagar/vim-table-mode'
     call plug#end()
+endif
