@@ -8,6 +8,8 @@ endif
 
 if !exists('g:vscode')
     call plug#begin('~/.config/nvim/autoload/plugged')
+        " Start screen
+        Plug 'mhinz/vim-startify'
         " Better Syntax Support
         Plug 'sheerun/vim-polyglot'
         " File Explorer
@@ -20,6 +22,7 @@ if !exists('g:vscode')
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
         Plug 'tomasiser/vim-code-dark'
+        Plug 'kaicataldo/material.vim', { 'branch': 'main' }
         " Code Completion
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
         " Tags
@@ -28,6 +31,7 @@ if !exists('g:vscode')
         Plug 'mattn/emmet-vim'
         " Commenting
         Plug 'tpope/vim-commentary'
+        Plug 'preservim/nerdcommenter'
         " Syntax highlighting
         Plug 'HerringtonDarkholme/yats.vim'
         Plug 'yuezk/vim-js'

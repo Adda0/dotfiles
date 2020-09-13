@@ -8,6 +8,7 @@ let g:mapleader = "\<Space>"
     set number relativenumber
     set termguicolors
     " colorscheme codedark
+     " colorscheme material
 
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
