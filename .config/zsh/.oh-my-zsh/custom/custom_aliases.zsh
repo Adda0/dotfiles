@@ -137,6 +137,8 @@ alias sar="sudo apt autoremove -y"
 alias dar="doas apt autoremove -y"
 alias rem='sudo apt autoremove --purge'
 
+# Snap commands
+alias snapr="snap refresh"
 
 # Git aliases
 ## Git command
