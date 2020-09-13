@@ -78,7 +78,8 @@ alias fzfcd='fzfcd() { cd "$(find -type d 2>/dev/null | fzf)" ;}; fzfcd'
 alias fzfed='fzfed() { $EDITOR "$(find -type f 2>/dev/null | fzf)" ;}; fzfed'
 
 # find
-alias fd="find -name"
+#alias fd="find -name"
+alias fd=fdfind
 alias fcd='find . -type d -name' # find directory starting from current directory
 alias fcf='find . -type f -name' # find file starting from current directory
 
