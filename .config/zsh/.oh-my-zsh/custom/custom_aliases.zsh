@@ -46,10 +46,10 @@ alias tarc="tar -cvzf"
 alias tarx="tar -xf"
 
 
-# shutdown or reboot # TODO
-alias ssn="sudo shutdown now"
-alias off="shutdown -h now"
-alias sr="sudo reboot"
+# shutdown or reboot
+alias sshutdown="sudo shutdown now"
+alias soff="shutdown -h now"
+alias sreboot="sudo reboot"
 
 
 # Aliases for ls
