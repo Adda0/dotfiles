@@ -32,7 +32,6 @@ if !exists('g:vscode')
         Plug 'HerringtonDarkholme/yats.vim'
         Plug 'yuezk/vim-js'
         Plug 'maxmellon/vim-jsx-pretty'
-        Plug 'rust-lang/rust.vim'
         " Motions
         Plug 'easymotion/vim-easymotion'
         " Git
