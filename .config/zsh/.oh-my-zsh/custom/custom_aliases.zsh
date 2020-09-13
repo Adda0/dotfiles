@@ -171,6 +171,9 @@ function acp() {
   gaaa && gcs && gp
 }
 
+# Update fonts
+alias font_update="fc-cache -f -v"
+
 # GPG aliases
 alias gpgl="gpg --list-secret-keys --keyid-format LONG"
 alias gpgg="gpg --full-generate-key"
