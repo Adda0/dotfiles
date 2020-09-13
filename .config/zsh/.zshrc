@@ -14,7 +14,7 @@
 PATH="$HOME/.cargo/bin${PATH:+:${PATH}}":
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/adda/.config/zsh/.oh-my-zsh"
+ZSH="/home/adda/.config/zsh/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -86,7 +86,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # sudo: Hitting `ESC` twice puts sudo in front of the current command, or the last one if the command line is empty.
 # vscode: Makes interaction between the command line and the code editor easier.
 
-# yarn rake cloudfoundry
+# yarn rake cloudfoundry npm node
 plugins=(
     git
     zsh-autosuggestions
