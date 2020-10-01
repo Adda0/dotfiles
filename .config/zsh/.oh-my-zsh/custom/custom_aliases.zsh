@@ -86,7 +86,6 @@ alias fcf='find . -type f -name' # find file starting from current directory
 # General aliases
 alias c='clear'
 alias e='exit'
-alias ex='exit'
 alias srczsh="source $HOME/.config/zsh/.zshrc"
 alias ra="ranger"
 alias cpr="cp -r"
