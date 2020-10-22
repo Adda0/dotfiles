@@ -202,6 +202,7 @@
     br = branch --verbose
     bra = branch --all --verbose
     brd = branch --verbose -d
+    brm = branch -m --verbose
     cc = rev-list --count # git rev-list --count <revision>
     cca = rev-list --all --count
     clear = reset --hard
