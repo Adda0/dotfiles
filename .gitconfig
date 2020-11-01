@@ -247,6 +247,7 @@
     rbis = rebase --interactive --gpg-sign
     rbim = rebase --interactive master
     rf = reflog
+    rv = remote --verbose
     s = status --short --branch
     sm = submodule
     sma = submodule add
