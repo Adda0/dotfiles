@@ -129,15 +129,15 @@ alias zshconf="${=EDITOR} $HOME/.config/zsh/.zshrc"
 alias grubconf="sudo ${=EDITOR} /etc/default/grub && sudo grub-update"
 
 # Apt commands
-alias sai="sudo apt install -y"
-alias dai="doas apt install -y"
+alias sai="sudo apt install -y -V"
+alias dai="doas apt install -y -V"
 alias sau="sudo apt update && sudo apt upgrade -y"
-alias dau="doas apt update && doas apt upgrade -y"
-alias sap="sudo apt purge -y"
-alias dap="doas apt purge -y"
-alias sar="sudo apt autoremove -y"
-alias dar="doas apt autoremove -y"
-alias rem='sudo apt autoremove --purge'
+alias dau="doas apt update -V && doas apt upgrade -y -V"
+alias sap="sudo apt purge -y -V"
+alias dap="doas apt purge -y -V"
+alias sar="sudo apt autoremove -y -V"
+alias dar="doas apt autoremove -y -V"
+alias rem='sudo apt autoremove --purge -V'
 
 # Snap commands
 alias snapr="snap refresh"
