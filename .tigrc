@@ -1,2 +1,4 @@
-bind status C !git cs
-bind status A !git ars
+bind status C  !git cs
+bind status A  !git ars
+bind main   P  !git p
+bind main   F !git pf
