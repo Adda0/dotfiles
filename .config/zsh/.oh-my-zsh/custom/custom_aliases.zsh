@@ -140,6 +140,9 @@ alias sar="sudo apt autoremove -y -V"
 alias dar="doas apt autoremove -y -V"
 alias rem='sudo apt autoremove --purge -V'
 
+
+# Pacman commands
+alias pmu='sudo pacman -Syyu'
 # Snap commands
 alias snapr="snap refresh"
 
