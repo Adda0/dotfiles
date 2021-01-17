@@ -24,6 +24,7 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 alias cdr="source ranger"
+alias cdb="cd -"
 
 # Processes
 alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
