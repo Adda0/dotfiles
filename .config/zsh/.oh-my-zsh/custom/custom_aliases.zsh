@@ -83,7 +83,7 @@ alias fzfed='fzfed() { $EDITOR "$(find -type f 2>/dev/null | fzf)" ;}; fzfed'
 
 # find
 #alias fd="find -name"
-alias fd=fdfind
+alias fd='fdfind'
 alias fcd='find . -type d -name' # find directory starting from current directory
 alias fcf='find . -type f -name' # find file starting from current directory
 
@@ -154,6 +154,8 @@ alias snapr="snap refresh"
 alias g='git'
 alias gut='git'
 alias got='git'
+
+alias t='tig status'
 
 ## Git shortcuts
 alias gi="g i"
@@ -324,7 +326,7 @@ alias py='python3'
 
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
-alias t='tail -f'
+alias ta='tail -f'
 
 # Command line head / tail shortcuts
 alias -g H='| head'
