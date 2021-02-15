@@ -349,3 +349,6 @@ alias unexport='unset'
 alias gds-start='sudo systemctl start openvpn-client@gds'
 alias gds-stop='sudo systemctl stop openvpn-client@gds'
 alias lbrynet='/opt/LBRY/resources/static/daemon/lbrynet'
+
+alias stv_mapstart="xbindkeys ; key-mapper-control --command autoload"
+alias stv_mapstop="killall xbindkeys ; key-mapper-control --command stop --device \"BTC USB Multimedia Keyboard\""
