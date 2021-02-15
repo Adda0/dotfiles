@@ -123,8 +123,8 @@ alias cpranger="yes | cpr ./.config/ranger $HOME/.config/"
 alias cptigrc="yes | cp ./.tigrc $HOME/.tigrc"
 
 ## Open config files
-alias dotf="cd /mnt/DATA/Data/David/it/dotfiles"
-alias dotfiles="cd /mnt/DATA/Data/David/it/dotfiles"
+alias dotf="cd ~/Documents/it/adda_dotfiles"
+alias dotfiles="cd ~/Documents/it/adda_dotfiles"
 alias aliases="${=EDITOR} $HOME/.oh-my-zsh/custom/custom_aliases.zsh"
 alias gitconf="${=EDITOR} $HOME/.gitconfig"
 alias ohmyzsh="${=EDITOR} $HOME/.oh-my-zsh"
