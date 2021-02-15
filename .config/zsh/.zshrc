@@ -13,6 +13,9 @@
 
 PATH="$HOME/.cargo/bin${PATH:+:${PATH}}":
 
+export PYTHONPATH=${PYTHONPATH}:/mnt/DATA/Data/David/School/projPrax/symboliclib/symboliclib
+export PYTHONPATH=${PYTHONPATH}:/mnt/DATA/Data/David/School/projPrax/z3/build/python
+
 # Path to your oh-my-zsh installation.
 ZSH="/home/adda/.config/zsh/.oh-my-zsh"
 
