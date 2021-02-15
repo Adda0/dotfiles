@@ -234,7 +234,9 @@
     m = merge --no-ff
     ma = merge --abort
     p = push
+    pa = push all
     pf = push --force
+    pfa = push --force all
     pb = "!git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`"
     db = "!git branch --delete \"$1\" && git push origin --delete \"$1\" #"
     pl = pull --rebase=merges --autostash --stat --prune
