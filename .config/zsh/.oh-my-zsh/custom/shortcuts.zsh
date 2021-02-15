@@ -78,3 +78,14 @@ gpr() {
     echo 'failed to open a pull request.';
   fi
 }
+
+# Add all remotes from .git to 'all' target to push to all remote repositories simultaneusly
+# Doing it manually:
+# git config --add remote.all.url $url
+# Doing it automatically:
+# git-add-push-all # from git (sub)directory
+function git-add-push-all() {
+  while read -r name url method; do
+    git config --add remote.all.url "$url"
+  done < <(git remote -v | awk '!/^all/ && /push/')
+}
