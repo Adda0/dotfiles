@@ -69,6 +69,8 @@ alias l.='exa -a | egrep "^\."'
 #alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
 #alias lS='ls -1FSsh'
 
+#alias cat="bat"
+
 
 # libre office convert docx and pptx to pdf
 alias lowpdf="lowriter --convert-to pdf"
