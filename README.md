@@ -16,6 +16,6 @@ Git and shell configurations were based on [Petr Zemek's dotfiles repository](ht
 Neovim configurations were based on [Christian Chiarulli's articles](https://www.chrisatmachine.com/neovim) and [Brodie Robertson's configs](https://github.com/BrodieRobertson/dotfiles/tree/master/config/nvim).
 
 ## License
-Copyright (c) 2020 David Chocholaty (Adda) <chocholaty.david0@gmail.com>
+Copyright (c) 2020 David Chocholaty (Adda) <chocholaty.david@protonmail.com>
 
 Distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
