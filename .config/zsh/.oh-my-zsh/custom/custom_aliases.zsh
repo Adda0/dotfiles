@@ -201,6 +201,9 @@ function sshg {
     ssh-keygen -t rsa -b 4096 -C "$0"
 }
 
+alias sshmerlin="TERM=xterm-color ssh merlin.fit.vutbr.cz"
+alias ssheva="TERM=xterm-color ssh eva.fit.vutbr.cz"
+
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
 #alias myip="curl --silent https://ipecho.net/plain; echo"
