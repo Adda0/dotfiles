@@ -156,6 +156,7 @@ alias gut='git'
 alias got='git'
 
 alias t='tig status'
+alias tt='tig'
 
 ## Git shortcuts
 alias gi="g i"
