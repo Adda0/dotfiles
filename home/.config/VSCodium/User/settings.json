@@ -22,4 +22,5 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#333333"
     },
+    "editor.minimap.enabled": false,
 }
