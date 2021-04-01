@@ -184,8 +184,8 @@ zstyle ':completion:*:warnings' format 'No matches for: %d'
 zstyle ':completion:*' group-name ''
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source ~/.p10k.zsh
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/.config/zsh/.p10k.zsh
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 # Load ; should be last.
 source /usr/share/autojump/autojump.zsh 2>/dev/null
