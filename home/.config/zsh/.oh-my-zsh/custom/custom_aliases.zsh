@@ -179,6 +179,8 @@ alias gars="g ars"
 alias gr="g r"
 alias gpo="gp origin"
 alias gpom="gp origin master"
+alias gpp="gp personal"
+alias gppm="gp personal master"
 alias gs='g s'
 
 function acp() {
