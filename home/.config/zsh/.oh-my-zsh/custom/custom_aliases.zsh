@@ -146,6 +146,10 @@ alias rem='sudo apt autoremove --purge -V'
 
 # Pacman commands
 alias pmu='sudo pacman -Syyu'
+
+# Paru commands
+alias parub='paru --bottomup'
+
 # Snap commands
 alias snapr="snap refresh"
 
