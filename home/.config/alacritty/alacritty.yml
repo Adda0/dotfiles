@@ -4,101 +4,125 @@
 # environment variables. Some entries may override variables
 # set by alacritty itself.
 env:
-    # TERM variable
-    #
-    # This value is used to set the `$TERM` environment variable for
-    # each instance of Alacritty. If it is not present, alacritty will
-    # check the local terminfo database and use `alacritty` if it is
-    # available, otherwise `xterm-256color` is used.
-    TERM: alacritty
-    #TERM: xterm-256color
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  #TERM: xterm-256color
+  TERM: alacritty
 
 window:
-    # Window dimensions (changes require restart)
-    #
-    # Specified in number of columns/lines, not pixels.
-    # If both are `0`, this setting is ignored.
-    #dimensions:
-    #  columns: 0
-    #  lines: 0
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
 
-    # Window position (changes require restart)
-    #
-    # Specified in number of pixels.
-    # If the position is not set, the window manager will handle the placement.
-    #position:
-    #  x: 0
-    #  y: 0
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  #position:
+  #  x: 0
+  #  y: 0
 
-    # Window padding (changes require restart)
-    #
-    # Blank space added around the window in pixels. This padding is scaled
-    # by DPI and the specified value is always added at both opposing sides.
-    padding:
-      x: 10
-      y: 20
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 6
+    y: 6
+    #x: 10
+    #y: 20
 
-    # Spread additional padding evenly around the terminal content.
-    dynamic_padding: false
+  # Spread additional padding evenly around the terminal content.
+  dynamic_padding: false
 
-    # Window decorations
-    #
-    # Values for `decorations`:
-    #     - full: Borders and title bar
-    #     - none: Neither borders nor title bar
-    decorations: full
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  decorations: full
 
-    # Startup Mode (changes require restart)
-    #
-    # Values for `startup_mode`:
-    #   - Windowed
-    #   - Maximized
-    #   - Fullscreen
-    startup_mode: Maximized
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  startup_mode: Maximized
 
-    # Window title
-    title: Alacritty
-    # Allow terminal applications to change Alacritty's window title.
-    dynamic_title: true
-    # Window class (Linux/BSD only):
-    class:
-        # Application instance name
-        instance: Alacritty
-        # General application class
-        general: Alacritty
+  # Window title
+  title: Alacritty
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
 
-    # GTK theme variant (Linux/BSD only)
-    #
-    # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
-    # Set this to `None` to use the default theme variant.
-    gtk_theme_variant: None
+  # Window class (Linux/BSD only):
+  class:
+    # Application instance name
+    instance: Alacritty
+    # General application class
+    general: Alacritty
+
+  # GTK theme variant (Linux/BSD only)
+  #
+  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
+  # Set this to `None` to use the default theme variant.
+  #gtk_theme_variant: None
 
 scrolling:
-    # Maximum number of lines in the scrollback buffer.
-    # Specifying '0' will disable scrolling.
-    history: 15000
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 5000
 
-    # Scrolling distance multiplier.
-    # Number of lines the viewport will move for every line scrolled when
-    # scrollback is enabled (history > 0).
-    multiplier: 3
-    #multiplier: 10
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 3
+
+  # Scroll to the bottom when new text is written to the terminal.
+  #auto_scroll: false
+
+# Spaces per Tab (changes require restart)
+#
+# This setting defines the width of a tab in cells.
+#
+# Some applications, like Emacs, rely on knowing about the width of a tab.
+# To prevent unexpected behavior in these applications, it's also required to
+# change the `it` value in terminfo when altering this setting.
+#tabspaces: 8
 
 # Font configuration
 font:
-    # Normal (roman) font face
-    normal:
-        # Font family
-        #
-        # Default:
-        #   - (macOS) Menlo
-        #   - (Linux/BSD) monospace
-        #   - (Windows) Consolas
-        #family: "JetBrains Mono"
-        family: "Hack"
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    #family: Source Code Pro
+    # family: CodeNewRoman Nerd Font
+    # family: RobotoMono Nerd Font
+    family: "Hack"
+    # family: JetBrains Mono
+    # family: UbuntuMono Nerd Font
+    # family: Monofur Nerd Font
+    # family: TerminessTTF Nerd Font
+    # family: Mononoki Nerd Font
 
-        # The `style` can be specified to pick a specific face.
-        style: Regular
+    # The `style` can be specified to pick a specific face.
+    style: Regular
 
     #normal:
         #style: Medium
@@ -134,21 +158,21 @@ font:
         # The `style` can be specified to pick a specific face.
         style: Bold Italic
 
-    # Point size
-    size: 15
+  # Point size
+  size: 15
 
-    # Offset is the extra space around each character. `offset.y` can be thought of
-    # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
-    offset:
-      x: 0
-      y: 0
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
 
-    # Glyph offset determines the locations of the glyphs within their cells with
-    # the default being at the bottom. Increasing `x` moves the glyph to the right,
-    # increasing `y` moves the glyph upwards.
-    glyph_offset:
-      x: 0
-      y: 0
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # increasing `y` moves the glyph upwards.
+  glyph_offset:
+    x: 0
+    y: 0
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
@@ -254,10 +278,10 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-bell:
-    animation: EaseOutExpo
-    duration: 0
-    color: '#ffffff'
+#visual_bell:
+#  animation: EaseOutExpo
+#  duration: 0
+#  color: '0xffffff'
 
 # Background opacity
 #
@@ -274,12 +298,18 @@ selection:
 # Allow terminal applications to change Alacritty's window title.
 
 cursor:
-    style: Underline
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Underline
 
-    # If this is `true`, the cursor will be rendered as a hollow box when the
-    # window is not focused.
-    unfocused_hollow: true
-    vi_mode_style: Block
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+  vi_mode_style: Block
 
 # Live config reload (changes require restart)
 live_config_reload: true
@@ -302,42 +332,79 @@ live_config_reload: true
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-working_directory: None
+#working_directory: None
+
+# WinPTY backend (Windows only)
+#
+# Alacritty defaults to using the newer ConPTY backend if it is available,
+# since it resolves a lot of bugs and is quite a bit faster. If it is not
+# available, the the WinPTY backend will be used instead.
+#
+# Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
+# even if the ConPTY backend is available.
+#winpty_backend: false
 
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
 
-mouse:
-    # Click settings
+debug:
+  # Display the time it takes to redraw each frame.
+  render_timer: false
+
+  # Keep the log file after quitting Alacritty.
+  persistent_logging: false
+
+  # Log level
+  #
+  # Values for `log_level`:
+  #   - None
+  #   - Error
+  #   - Warn
+  #   - Info
+  #   - Debug
+  #   - Trace
+  log_level: Warn
+
+  # Print all received window events.
+  print_events: false
+
+  # Record all characters and escape sequences as test data.
+  #ref_test: false
+
+
+#mouse:
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  #hide_when_typing: false
+
+  #url:
+    # URL launcher
     #
-    # The `double_click` and `triple_click` settings control the time
-    # alacritty should wait for accepting multiple clicks as one double
-    # or triple click.
-    double_click: { threshold: 300 }
-    triple_click: { threshold: 300 }
+    # This program is executed when clicking on a text which is recognized as a URL.
+    # The URL is always added to the command as the last parameter.
+    #
+    # When set to `None`, URL launching will be disabled completely.
+    #
+    # Default:
+    #   - (macOS) open
+    #   - (Linux/BSD) xdg-open
+    #   - (Windows) explorer
+    #launcher:
+    #  program: xdg-open
+    #  args: []
 
-    # If this is `true`, the cursor is temporarily hidden when typing.
-    #hide_when_typing: true
-
-    url:
-        # URL launcher
-        #
-        # This program is executed when clicking on a text which is recognized as a URL.
-        # The URL is always added to the command as the last parameter.
-        #
-        # When set to `launcher: None`, URL launching will be disabled completely.
-        #
-        # Default:
-        #   - (Linux/BSD) xdg-open
-        launcher:
-            program: xdg-open
-            args: []
-
-        # URL modifiers
-        #
-        # These are the modifiers that need to be held down for opening URLs when clicking
-        # on them. The available modifiers are documented in the key binding section.
-        modifiers: None
+    # URL modifiers
+    #
+    # These are the modifiers that need to be held down for opening URLs when clicking
+    # on them. The available modifiers are documented in the key binding section.
+    #modifiers: None
 
 # Mouse bindings
 #
@@ -424,7 +491,9 @@ mouse_bindings:
 #   - ReceiveChar
 #   - None
 #
-
+#   (macOS only):
+#   - ToggleSimpleFullscreen: Enters fullscreen without occupying another space
+#
 # - `command`: Fork and execute a specified command plus arguments
 #
 #    The `command` field must be a map containing a `program` string and an
@@ -466,8 +535,6 @@ mouse_bindings:
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
 key_bindings:
-    #- { key: Paste,                                action: Paste          }
-    #- { key: Copy,                                 action: Copy           }
     #- { key: L,         mods: Control,             action: ClearLogNotice }
     #- { key: L,         mods: Control, mode: ~Vi,  chars: "\x0c"          }
     #- { key: PageUp,    mods: Shift,   mode: ~Alt, action: ScrollPageUp,  }
@@ -483,7 +550,10 @@ key_bindings:
     - { key: Key0,     mods: Control,       action: ResetFontSize    }
     - { key: Equals,   mods: Control,       action: IncreaseFontSize }
     - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-
+    - { key: F11,       mods: None,          action: ToggleFullscreen            }
+    - { key: Paste,     mods: None,          action: Paste                       }
+    - { key: Copy,      mods: None,          action: Copy                        }
+    - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
     #- { key: V,        mods: Control|Shift,           action: Paste            }
     #- { key: C,        mods: Control|Shift,           action: Copy             }
     #- { key: F,        mods: Control|Shift,           action: SearchForward    }
@@ -522,6 +592,7 @@ key_bindings:
     - { key: Left,                        mode: Vi, action: Left                    }
     - { key: Right,                       mode: Vi, action: Right                   }
     - { key: Key0,                        mode: Vi, action: First                   }
+    - { key: Key0,      mods: Control,       action: ResetFontSize               }
     - { key: Key4,                        mode: Vi, action: Last                    }
     - { key: Key6,   mods: Shift,         mode: Vi, action: FirstOccupied           }
     - { key: H,      mods: Shift,         mode: Vi, action: High                    }
@@ -538,24 +609,3 @@ key_bindings:
     - { key: Slash,  mods: Shift,         mode: Vi, action: SearchBackward          }
     - { key: N,                           mode: Vi, action: SearchNext              }
     - { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
-
-debug:
-    # Display the time it takes to redraw each frame.
-    render_timer: false
-
-    # Keep the log file after quitting Alacritty.
-    persistent_logging: false
-
-    # Log level
-    #
-    # Values for `log_level`:
-    #   - None
-    #   - Error
-    #   - Warn
-    #   - Info
-    #   - Debug
-    #   - Trace
-    log_level: Warn
-
-    # Print all received window events.
-    print_events: false
