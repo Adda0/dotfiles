@@ -211,6 +211,11 @@ function sshg {
 alias sshmerlin="TERM=xterm-color ssh merlin.fit.vutbr.cz"
 alias ssheva="TERM=xterm-color ssh eva.fit.vutbr.cz"
 
+# Rust
+alias crn="cargo new"
+alias crr="cargo run"
+alias crc="cargo check"
+
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
 #alias myip="curl --silent https://ipecho.net/plain; echo"
