@@ -192,5 +192,6 @@ source /usr/share/autojump/autojump.zsh 2>/dev/null
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 #neofetch
+colorscript random # Show random color script (DT's color scripts)
 
 # End of file
