@@ -16,6 +16,7 @@
     "terminal.integrated.shell.linux": "/bin/zsh",
     "html.format.wrapLineLength": 80,
     "indenticator.inner.showHighlight": true,
+    "security.workspace.trust.enabled": false,
 
     // vertical rulers
     "editor.rulers": [80,120],
