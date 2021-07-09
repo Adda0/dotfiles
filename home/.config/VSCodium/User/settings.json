@@ -1,4 +1,6 @@
 {
+    "vim.enableNeovim": true,
+    "cmake.configureOnOpen": false,
     "telemetry.enableTelemetry": false,
 
     // override VSCode keycodes with system keycodes
@@ -23,5 +25,6 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#333333"
     },
+
     "editor.minimap.enabled": false,
 }
