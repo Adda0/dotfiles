@@ -177,6 +177,7 @@ bindkey -M menuselect '^M' .accept-line
 set -o vi
 bindkey -v
 
+xmodmap -e 'keycode 105 = Menu'
 
 zstyle ':completion:*:descriptions' format '%B%d%b'
 zstyle ':completion:*:messages' format '%d'
