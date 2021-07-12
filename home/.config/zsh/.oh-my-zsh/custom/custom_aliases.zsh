@@ -165,6 +165,7 @@ alias tt='tig'
 ## Git shortcuts
 alias gi="g i"
 alias gb='g cob'
+alias gcob="g cob"
 alias gc="g c"
 alias gcm="g cm"
 alias gcom="g cm"
@@ -181,11 +182,23 @@ alias gpl="g pl"
 alias gd='g d'
 alias gars="g ars"
 alias gr="g r"
-alias gpo="gp origin"
-alias gpom="gp origin master"
+alias gpo="git pull origin"
+alias gpom="git pull origin master"
 alias gpp="gp personal"
 alias gppm="gp personal master"
 alias gs='g s'
+
+#TODO to review
+#alias gbd="git branch -D"
+#alias gca="git commit -a -m"
+#alias gm="git merge --no-ff"
+#alias gpt="git push --tags"
+#alias grh="git reset --hard"
+#alias gb="git branch"
+#alias gba="git branch -a"
+#alias gcp="git cherry-pick"
+#alias gl="git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph"
+#alias gcd='cd "`git rev-parse --show-toplevel`"'
 
 function acp() {
   gaaa && gcs && gp
