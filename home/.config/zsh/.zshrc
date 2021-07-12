@@ -192,6 +192,9 @@ source ~/.config/zsh/.p10k.zsh
 source /usr/share/autojump/autojump.zsh 2>/dev/null
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+# ZSH autocompletion in git-extras
+source /tmp/git-extras-install.0CELcSye2q/git-extras/etc/git-extras-completion.zsh
+
 #neofetch
 colorscript random # Show random color script (DT's color scripts)
 
