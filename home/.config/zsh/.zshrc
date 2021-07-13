@@ -184,6 +184,10 @@ zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format 'No matches for: %d'
 zstyle ':completion:*' group-name ''
 
+# Autocomplete Git branches names without lag
+__git_files () {
+    _wanted files expl 'local files' _files
+}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 source ~/.config/zsh/.p10k.zsh
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
