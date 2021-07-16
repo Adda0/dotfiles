@@ -225,9 +225,16 @@ alias sshmerlin="TERM=xterm-color ssh merlin.fit.vutbr.cz"
 alias ssheva="TERM=xterm-color ssh eva.fit.vutbr.cz"
 
 # Rust
+alias cr="cargo"
+alias crb="cargo build"
+alias crbr="cargo build --release"
+alias crd="cargo doc"
 alias crn="cargo new"
 alias crr="cargo run"
+alias crrr="cargo run --release"
 alias crc="cargo check"
+alias cru="cargo update"
+alias cruf="cargo upgrade"
 
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
